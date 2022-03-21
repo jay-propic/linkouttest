@@ -1,0 +1,26 @@
+<div id="lightning"></div>
+<script src="https://revealai-dev-ed.lightning.force.com/lightning/lightning.out.js"></script>
+<script>
+     $Lightning.use("c:dashboard", function() {
+        $Lightning.createComponent("c:dashboard", {
+            	objectName: "prpt__Appraisal_Listing__c"
+            },
+              "lightning",
+              function(cmp) {
+                console.log("LWC component was created");
+                // do some stuff
+              }
+          );
+        },
+       'https://revealai-dev-ed.lightning.force.com/'
+       );
+      $Lightning.use("wave:waveApp", function() {
+          $Lightning.createComponent("wave:waveDashboard", 
+          {    
+            dashboardId: "0FK2w000000odMaGAI"  
+            }, 
+            "app");
+        }, 
+        'https://revealai-dev-ed.lightning.force.com/', 
+        '00D2w000002Eejl!AQUAQN.wySLdopMY.WhvupzyG3onP4ixPKW7JYv8KwxXz4RwfId991cIrR70dLvJHj9zonXlYZErAkygUvQDcNUgx7i8X46')
+</script>
